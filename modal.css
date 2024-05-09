@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("https://t3.ftcdn.net/jpg/05/58/70/36/360_F_558703612_7ax3z1GoPG7CAOgeD9IfhKBqI3zE6hNM.jpg");
+    background-size: cover;
+}
+button{
+    background-color: rgb(180, 199, 199);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(237, 235, 235, 0.2);
+    color: blue;
+    font-size: 14px;
+    padding: 10px 25px;
+    
+}
+.mainmodal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: lightcoral;; */
+    background-image: url("https://img.freepik.com/free-vector/fashion-sketch-collection-with-models_52683-15857.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1714780800&semt=ais");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s auto;
+    background-size: cover;
+}
+.mainmodal.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+.modal {
+    background-color: antiquewhite;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.modal h1{
+    margin: 0;
+    color: rgb(168, 20, 20);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.modal p{
+   font-size: 16px;
+    opacity: 0.7;  
+    color: black;
+
+}
+#close{
+    background-color: aquamarine;
+}
